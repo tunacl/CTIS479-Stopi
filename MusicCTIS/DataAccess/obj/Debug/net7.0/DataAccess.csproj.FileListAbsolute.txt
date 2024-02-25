@@ -12,3 +12,18 @@ C:\Users\tunac\source\repos\MusicCTIS\DataAccess\obj\Debug\net7.0\refint\DataAcc
 C:\Users\tunac\source\repos\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.pdb
 C:\Users\tunac\source\repos\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
 C:\Users\tunac\source\repos\MusicCTIS\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.sourcelink.json
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

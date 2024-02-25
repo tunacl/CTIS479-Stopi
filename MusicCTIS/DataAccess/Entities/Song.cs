@@ -16,12 +16,16 @@ namespace DataAccess.Entities
 
         public DateTime? PublishDate { get; set; }
 
-        public int ArtistId { get; set; }
         public Artist Artist { get; set; }
+        public int? ArtistId { get; set; }
 
         public decimal? TotalListening { get; set; }
 
         public List<UserSong> UserSong  { get; set; }
+
+        public Playlist Playlist { get; set; }
+
+        public int? PlaylistId { get; set; }
 
 
 

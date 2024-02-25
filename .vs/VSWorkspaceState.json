@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MusicCTIS",
+    "\\MusicCTIS\\DataAccess",
+    "\\MusicCTIS\\DataAccess\\Contexts",
+    "\\MusicCTIS\\MVC"
+  ],
+  "SelectedNode": "\\MusicCTIS\\DataAccess\\Contexts\\Db.cs",
+  "PreviewInSolutionExplorer": false
+}
