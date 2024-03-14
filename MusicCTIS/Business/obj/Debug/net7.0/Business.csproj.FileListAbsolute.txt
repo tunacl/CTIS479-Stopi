@@ -1,0 +1,16 @@
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\bin\Debug\net7.0\Business.deps.json
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\bin\Debug\net7.0\Business.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\bin\Debug\net7.0\Business.pdb
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.AssemblyInfoInputs.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.AssemblyInfo.cs
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.sourcelink.json
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\refint\Business.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.pdb
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\ref\Business.dll
+C:\Users\tunac\source\repos\CTIS479-Stopi\MusicCTIS\Business\bin\Debug\net7.0\DataAccess.dll
+C:\Users\tunac\source\repos\CTIS479-Stopi\MusicCTIS\Business\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\tunac\source\repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.csproj.AssemblyReference.cache
+C:\Users\tunac\source\repos\CTIS479-Stopi\MusicCTIS\Business\obj\Debug\net7.0\Business.csproj.CopyComplete

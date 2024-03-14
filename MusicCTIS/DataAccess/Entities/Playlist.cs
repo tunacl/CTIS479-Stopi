@@ -1,4 +1,5 @@
-﻿using DataAccess.Records.Bases;
+﻿#nullable disable
+using DataAccess.Records.Bases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class Playlist : Record
+    public class Playlist //bu record olmayacak mı?
     {
         public int PlaylistId { get; set; }
 

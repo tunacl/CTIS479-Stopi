@@ -1,4 +1,5 @@
-﻿using DataAccess.Records.Bases;
+﻿#nullable disable
+using DataAccess.Records.Bases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,6 @@ namespace DataAccess.Entities
     {
         public string Name { get; set; }
 
-        public List<Song> Songs { get; set; }
+        public List<Song> Songs { get; set; } //hepsine nulalble disable unutma
     }
 }

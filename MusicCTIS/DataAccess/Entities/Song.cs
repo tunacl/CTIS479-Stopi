@@ -1,4 +1,5 @@
-﻿using DataAccess.Records.Bases;
+﻿#nullable disable
+using DataAccess.Records.Bases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

@@ -27,3 +27,18 @@ C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug
 C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.pdb
 C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
 C:\Users\Tuna ÇÖLLÜ\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.sourcelink.json
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+C:\Users\tunac\Source\Repos\CTIS479-Stopi\MusicCTIS\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

@@ -2953,19 +2953,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tuna ÇÖLLÜ\\.nuget\\packages\\": {}
+    "C:\\Users\\tunac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tuna ÇÖLLÜ\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\tunac\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Tuna ÇÖLLÜ\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Tuna ÇÖLLÜ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tuna ÇÖLLÜ\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\tunac\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\tunac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tunac\\Source\\Repos\\CTIS479-Stopi\\MusicCTIS\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tuna ÇÖLLÜ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tunac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

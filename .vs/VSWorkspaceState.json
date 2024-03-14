@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\MusicCTIS",
-    "\\MusicCTIS\\DataAccess",
-    "\\MusicCTIS\\DataAccess\\Contexts",
-    "\\MusicCTIS\\MVC"
+    "\\MusicCTIS\\Business",
+    "\\MusicCTIS\\Business\\Models",
+    "\\MusicCTIS\\Business\\Services"
   ],
-  "SelectedNode": "\\MusicCTIS\\DataAccess\\Contexts\\Db.cs",
+  "SelectedNode": "\\MusicCTIS\\Business\\Models\\RoleModel.cs",
   "PreviewInSolutionExplorer": false
 }
