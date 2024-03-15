@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Entities
 {
-    public class Playlist //bu record olmayacak mı?
+    public class Playlist : Record
     {
         public int PlaylistId { get; set; }
 

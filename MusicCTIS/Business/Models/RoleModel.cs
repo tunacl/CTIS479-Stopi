@@ -1,4 +1,5 @@
-﻿using DataAccess.Records.Bases;
+﻿#nullable disable
+using DataAccess.Records.Bases;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace Business.Models
     {
         #region Entity Properities
         [DisplayName("Role Name")]
-        [Required(ErrorMessage ="{0} is required!")] //default hatayı almamak için modifiye ediyoruz 
+        [Required(ErrorMessage = "{0} is required!")] //default hatayı almamak için modifiye ediyoruz 
         [StringLength(40)]
         public string Name { get; set; }
         #endregion
@@ -25,9 +26,8 @@ namespace Business.Models
 
         public int UserCount { get; set; }
 
-        [DisplayName("Users")]
-        
-        public string UserRoles { get; set; }
+             
+        public string Users { get; set; }
 
         #endregion
 

@@ -77,7 +77,7 @@ namespace MVC.Controllers
         // GET: Roles/Edit/5
         public IActionResult Edit(int id)
         {
-            RoleModel role = null; // TODO: Add get item service logic here
+            RoleModel role = _roleService.Query().SingleOrDefault(r => r.Id == id); // TODO: Add get item service logic here
             if (role == null)
             {
                 return NotFound();
@@ -96,7 +96,13 @@ namespace MVC.Controllers
             if (ModelState.IsValid)
             {
                 // TODO: Add update service logic here
-                return RedirectToAction(nameof(Index));
+                Result result = _roleService.Update(role);
+                if (result.isSuccess)
+                {
+                    TempData["Message"] = result.Message;
+                    return RedirectToAction(nameof(Index));
+                }
+                ModelState.AddModelError("", result.Message);
             }
             // TODO: Add get related items service logic here to set ViewData if necessary
             return View(role);
@@ -105,7 +111,7 @@ namespace MVC.Controllers
         // GET: Roles/Delete/5
         public IActionResult Delete(int id)
         {
-            RoleModel role = null; // TODO: Add get item service logic here
+            RoleModel role = _roleService.Query().SingleOrDefault(r => r.Id == id); // TODO: Add get item service logic here
             if (role == null)
             {
                 return NotFound();
@@ -119,6 +125,8 @@ namespace MVC.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             // TODO: Add delete service logic here
+            Result result = _roleService.Delete(id);
+            TempData["Message"] = result.Message;
             return RedirectToAction(nameof(Index));
         }
 	}

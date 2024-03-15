@@ -6,6 +6,6 @@
     "\\MusicCTIS\\Business\\Models",
     "\\MusicCTIS\\Business\\Services"
   ],
-  "SelectedNode": "\\MusicCTIS\\Business\\Models\\RoleModel.cs",
+  "SelectedNode": "\\MusicCTIS\\Business\\Services\\ArtistService.cs",
   "PreviewInSolutionExplorer": false
 }

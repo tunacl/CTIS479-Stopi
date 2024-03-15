@@ -15,7 +15,7 @@ namespace Business.Services
     public interface IRoleService
     {
         IQueryable<RoleModel> Query();
-        Result Add(RoleModel role);
+        Result Add(RoleModel model);
         Result Update(RoleModel model);
         Result Delete(int id);
     }
@@ -28,15 +28,15 @@ namespace Business.Services
             _db = db;
         }
 
-        public Result Add(RoleModel role)
+        public Result Add(RoleModel model)
         {
-            if (_db.Roles.Any(r => r.Name.ToLower() == role.Name.ToLower().Trim()))
+            if (_db.Roles.Any(r => r.Name.ToLower() == model.Name.ToLower().Trim()))
                 return new ErrorResult("Role name is already exist!");
 
             Role newRole = new Role()
             {
                 Guid = Guid.NewGuid().ToString(),//guid random atamak için sanırım
-                Name = role.Name.Trim(),
+                Name = model.Name.Trim(),
             };
 
             _db.Roles.Add(newRole);
@@ -49,7 +49,7 @@ namespace Business.Services
         {
             Role entity = _db.Roles.Include(r => r.Users).SingleOrDefault(r => r.Id == id);
             if (entity == null)
-                return new ErrorResult("Role cannot exist");
+                return new ErrorResult("Role doesn't exist");
             else if (entity.Users is not null && entity.Users.Count > 0)
             {
                 return new ErrorResult("This role is used for more than one user!");
@@ -72,7 +72,7 @@ namespace Business.Services
                 Id = r.Id,
 
                 UserCount=r.Users.Count,
-                UserRoles = string.Join("<br />", r.Users.OrderBy(r => r.UserName).Select(r => r.UserName))
+                Users = string.Join("<br />", r.Users.OrderBy(r => r.UserName).Select(r => r.UserName))
             });
         }
 

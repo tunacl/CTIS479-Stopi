@@ -1,0 +1,49 @@
+﻿@model ArtistModel
+@*Generated from Custom Template.*@
+@*Model namespace using directive should be added to _ViewImports.cshtml.*@
+
+@{
+    ViewData["Title"] = "Artist's Detail Information";
+}
+
+
+
+<div>
+    <h4>Artist</h4>
+    <hr />
+        <dl class="row">
+            <dt class="col-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-2">
+                @Html.DisplayNameFor(model => model.TotalSong)
+            </dt>
+            <dd class="col-10">
+                @Html.DisplayFor(model => model.TotalSong)
+            </dd>
+        </dl>
+    @if (Model.TotalSong > 0)
+    {
+        <dl class="row">
+            <dt class="col-2">
+                @Html.DisplayNameFor(model => model.Songs)
+            </dt>
+            <dd class="col-10">
+                @Html.Raw(Model.Songs)
+            </dd>
+        </dl>
+    }
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>&nbsp;|&nbsp;
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
