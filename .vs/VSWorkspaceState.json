@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MusicCTIS",
-    "\\MusicCTIS\\Business",
-    "\\MusicCTIS\\Business\\Models",
-    "\\MusicCTIS\\Business\\Services"
+    "\\MusicCTIS"
   ],
-  "SelectedNode": "\\MusicCTIS\\Business\\Services\\ArtistService.cs",
+  "SelectedNode": "\\MusicCTIS\\MusicCTIS.sln",
   "PreviewInSolutionExplorer": false
 }

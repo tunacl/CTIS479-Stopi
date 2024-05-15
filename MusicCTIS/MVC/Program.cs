@@ -12,6 +12,7 @@ builder.Services.AddDbContext<Db>(options => options.UseSqlServer(connectionStri
 
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IArtistService, ArtistService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 #endregion
 
