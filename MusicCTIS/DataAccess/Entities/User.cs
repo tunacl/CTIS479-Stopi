@@ -26,7 +26,6 @@ namespace DataAccess.Entities
 
         public List<UserSong> UserSongs { get; set; }
 
-        public List<Playlist> Playlists { get; set; }
 
 
     }

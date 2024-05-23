@@ -1,0 +1,43 @@
+﻿@model SongModel
+@*Generated from Custom Template.*@
+@*Model namespace using directive should be added to _ViewImports.cshtml.*@
+
+@{
+    ViewData["Title"] = "Song Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (TempData["Message"] is not null)
+{
+<p class="bg-info text-black">@TempData["Message"]</p>
+}
+
+<div>
+    
+    <hr />
+        <dl class="row">
+            <dt class="col-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-2">
+                @Html.DisplayNameFor(model => model.ArtistChoice.Name)
+            </dt>
+            <dd class="col-10">
+                @Html.DisplayFor(model => model.ArtistChoice.Name)
+            </dd>
+        </dl>
+       
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>&nbsp;|&nbsp;
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+

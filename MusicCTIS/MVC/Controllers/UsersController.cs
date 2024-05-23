@@ -12,20 +12,23 @@ using Business.Services;
 using Business.Models;
 using DataAccess.Results.Bases;
 using Microsoft.AspNetCore.Authorization;
+using MVC.Controllers.Bases;
 
 //Generated from Custom Template.
 namespace MVC.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : MvcControllerBase
     {
         // TODO: Add service injections here
         private readonly IUserService _userService;
         private readonly IRoleService _roleService;
+        private readonly ISongService _songService;
 
-        public UsersController(IUserService userService, IRoleService roleService)
+		public UsersController(IUserService userService, IRoleService roleService, ISongService songService)
         {
             _userService = userService;
             _roleService = roleService;
+            _songService = songService;
         }
 
         // GET: Users
@@ -36,6 +39,7 @@ namespace MVC.Controllers
         }
 
         // GET: Users/Details/5
+        [Authorize(Roles = "admin")]
         public IActionResult Details(int id)
         {
             UserModel user = _userService.GetItem(id); // TODO: Add get item service logic here
@@ -47,11 +51,14 @@ namespace MVC.Controllers
         }
 
         // GET: Users/Create
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             // TODO: Add get related items service logic here to set ViewData if necessary
             ViewData["RoleId"] = new SelectList(_roleService.Query().ToList(),"Id","Name");
-            return View();
+			ViewBag.Songs = new MultiSelectList(_songService.Query().ToList(), "Id", "Name");
+
+			return View();
         }
 
         // POST: Users/Create
@@ -59,6 +66,7 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public IActionResult Create(UserModel user)
         {
             if (ModelState.IsValid)
@@ -75,22 +83,27 @@ namespace MVC.Controllers
 
             // TODO: Add get related items service logic here to set ViewData if necessary
             ViewData["RoleId"] = new SelectList(_roleService.Query().ToList(), "Id", "Name");
-            // TODO: Games
+			ViewBag.Songs = new MultiSelectList(_songService.Query().ToList(), "Id", "Name");
 
-            return View(user);
+			// TODO: 
+
+			return View(user);
         }
 
         // GET: Users/Edit/5
+        [Authorize(Roles = "admin")]
         public IActionResult Edit(int id)
         {
             UserModel user = _userService.GetItem(id); // TODO: Add get item service logic here
             if (user == null)
             {
-                return NotFound();
+                return View("Error", "User not found!");
             }
             // TODO: Add get related items service logic here to set ViewData if necessary
             ViewData["RoleId"] = new SelectList(_roleService.Query().ToList(), "Id", "Name");
-            return View(user);
+			ViewBag.Songs = new MultiSelectList(_songService.Query().ToList(), "Id", "Name");
+
+			return View(user);
         }
 
         // POST: Users/Edit
@@ -115,9 +128,11 @@ namespace MVC.Controllers
 
             // TODO: Add get related items service logic here to set ViewData if necessary
             ViewData["RoleId"] = new SelectList(_roleService.Query().ToList(), "Id", "Name");
-            // TODO: Games
+			ViewBag.Songs = new MultiSelectList(_songService.Query().ToList(), "Id", "Name");
 
-            return View(user);
+			// TODO: 
+
+			return View(user);
         }
 
         // GET: Users/Delete/5
@@ -127,7 +142,7 @@ namespace MVC.Controllers
             UserModel user = _userService.GetItem(id); // TODO: Add get item service logic here 
             if (user == null)
             {
-                return NotFound();
+                return View("Error", "User not found!");
             }
             return View(user);
         }

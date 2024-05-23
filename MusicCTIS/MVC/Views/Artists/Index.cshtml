@@ -12,9 +12,14 @@
     <p class="bg-info text-black">@TempData["Message"]</p>
 }
 
+
+@if (User.IsInRole("admin") && User.IsInRole("client"))
+{
+    
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+}
 <table class="table">
     <thead>
         <tr>

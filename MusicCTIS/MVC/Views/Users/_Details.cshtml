@@ -1,0 +1,52 @@
+﻿@model UserModel
+
+<h4>User</h4>
+<hr />
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.UserName)
+    </dt>
+    <dd class="col-10">
+        @Html.DisplayFor(model => model.UserName)
+    </dd>
+</dl>
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.Password)
+    </dt>
+    <dd class="col-10">
+        @Html.DisplayFor(model => model.Password)
+    </dd>
+</dl>
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.BirthDateOutput)
+    </dt>
+    <dd class="col-10">
+        @Html.DisplayFor(model => model.BirthDateOutput)
+    </dd>
+</dl>
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.IsActiveOutput)
+    </dt>
+    <dd class="col-10">
+        @Html.DisplayFor(model => model.IsActiveOutput)
+    </dd>
+</dl>
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.RoleOutput.Name)
+    </dt>
+    <dd class="col-10">
+        @Html.DisplayFor(model => model.RoleOutput.Name)
+    </dd>
+</dl>
+<dl class="row">
+    <dt class="col-2">
+        @Html.DisplayNameFor(model => model.SongNamesOutput)
+    </dt>
+    <dd class="col-10">
+        @Html.Raw(Model.SongNamesOutput)
+    </dd>
+</dl>

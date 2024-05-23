@@ -41,33 +41,6 @@ namespace DataAccess.Migrations
                     b.ToTable("Artists");
                 });
 
-            modelBuilder.Entity("DataAccess.Entities.Playlist", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Guid")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PlaylistId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PlaylistName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Playlists");
-                });
-
             modelBuilder.Entity("DataAccess.Entities.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -108,20 +81,9 @@ namespace DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("PlaylistId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("PublishDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal?>("TotalListening")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ArtistId");
-
-                    b.HasIndex("PlaylistId");
 
                     b.ToTable("Songs");
                 });
@@ -189,28 +151,13 @@ namespace DataAccess.Migrations
                     b.ToTable("UserSongs");
                 });
 
-            modelBuilder.Entity("DataAccess.Entities.Playlist", b =>
-                {
-                    b.HasOne("DataAccess.Entities.User", null)
-                        .WithMany("Playlists")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("DataAccess.Entities.Song", b =>
                 {
                     b.HasOne("DataAccess.Entities.Artist", "Artist")
                         .WithMany("Songs")
                         .HasForeignKey("ArtistId");
 
-                    b.HasOne("DataAccess.Entities.Playlist", "Playlist")
-                        .WithMany("Songs")
-                        .HasForeignKey("PlaylistId");
-
                     b.Navigation("Artist");
-
-                    b.Navigation("Playlist");
                 });
 
             modelBuilder.Entity("DataAccess.Entities.User", b =>
@@ -248,11 +195,6 @@ namespace DataAccess.Migrations
                     b.Navigation("Songs");
                 });
 
-            modelBuilder.Entity("DataAccess.Entities.Playlist", b =>
-                {
-                    b.Navigation("Songs");
-                });
-
             modelBuilder.Entity("DataAccess.Entities.Role", b =>
                 {
                     b.Navigation("Users");
@@ -265,8 +207,6 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("DataAccess.Entities.User", b =>
                 {
-                    b.Navigation("Playlists");
-
                     b.Navigation("UserSongs");
                 });
 #pragma warning restore 612, 618

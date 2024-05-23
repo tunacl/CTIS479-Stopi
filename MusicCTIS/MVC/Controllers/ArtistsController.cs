@@ -12,11 +12,13 @@ using Business.Models;
 using Business.Services;
 using DataAccess.Results.Bases;
 using System.Data;
+using MVC.Controllers.Bases;
+using Microsoft.AspNetCore.Authorization;
 
 //Generated from Custom Template.
 namespace MVC.Controllers
 {
-    public class ArtistsController : Controller
+    public class ArtistsController : MvcControllerBase
     {
         // TODO: Add service injections here
         private readonly IArtistService _artistService;
@@ -45,6 +47,8 @@ namespace MVC.Controllers
         }
 
         // GET: Artists/Create
+        [Authorize(Roles = "admin")]
+
         public IActionResult Create()
         {
             // TODO: Add get related items service logic here to set ViewData if necessary
@@ -56,6 +60,8 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public IActionResult Create(ArtistModel artist)
         {
             if (ModelState.IsValid)
@@ -75,6 +81,8 @@ namespace MVC.Controllers
         }
 
         // GET: Artists/Edit/5
+        [Authorize(Roles = "admin")]
+
         public IActionResult Edit(int id)
         {
             ArtistModel artist = _artistService.Query().SingleOrDefault(a => a.Id == id); // TODO: Add get item service logic here
@@ -91,6 +99,8 @@ namespace MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public IActionResult Edit(ArtistModel artist)
         {
             if (ModelState.IsValid)
@@ -110,6 +120,8 @@ namespace MVC.Controllers
         }
 
         // GET: Artists/Delete/5
+        [Authorize(Roles = "admin")]
+
         public IActionResult Delete(int id)
         {
             ArtistModel artist = _artistService.Query().SingleOrDefault(a => a.Id == id); // TODO: Add get item service logic here

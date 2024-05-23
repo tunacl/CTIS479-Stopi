@@ -42,6 +42,13 @@ namespace Business.Models
 
         [DisplayName("Birth Date")]
         public string BirthDateOutput { get; set; }
+
+        [DisplayName("Songs")]
+        public List<int> SongIdsInput { get; set; }
+
+        [DisplayName("Songs")]
+        public string SongNamesOutput { get; set; }
+
         #endregion
 
 

@@ -12,7 +12,6 @@ namespace DataAccess.Contexts
     {
         public DbSet<Song> Songs { get; set; }
         public DbSet<Artist> Artists { get; set; }
-        public DbSet<Playlist> Playlists { get; set; }
         public DbSet<UserSong> UserSongs { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }

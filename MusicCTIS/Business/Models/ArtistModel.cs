@@ -7,10 +7,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccess.Records.Bases;
 
 namespace Business.Models
 {
-    public class ArtistModel : Artist
+    public class ArtistModel : Record
     {
         #region Entity Properities
         [DisplayName("Artist Name")]

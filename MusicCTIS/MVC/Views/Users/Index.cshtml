@@ -8,6 +8,11 @@
 
 <h1>@ViewData["Title"]</h1>
 
+@if (TempData["Message"] is not null)
+{
+    <p class="bg-info text-black">@TempData["Message"]</p>
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -17,7 +22,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.UserName)
             </th>
-            
+            <th>
+                @Html.DisplayNameFor(model => model.BirthDateOutput)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.IsActive)
             </th>
@@ -34,7 +41,10 @@
 					<td>
 						@Html.DisplayFor(modelItem => item.UserName)
 					</td>
-					
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDateOutput)
+                </td>
+               
 					<td>
 						@Html.DisplayFor(modelItem => item.IsActive)
 					</td>

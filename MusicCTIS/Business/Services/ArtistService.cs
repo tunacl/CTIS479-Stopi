@@ -51,18 +51,17 @@ namespace Business.Services
             {
                 return new ErrorResult("Artist information does not exist");
             }
-            else if(entity.Songs is not null && entity.Songs.Count > 0)
+            if(entity.Songs is not null && entity.Songs.Any())
             {
                 return new ErrorResult("Artist have more than one songs!");
 
             }
-            else
-            {
+            
                 _db.Artists.Remove(entity);
                 _db.SaveChanges();
                 return new SuccessResult("Artist information deleted successfully.");
 
-            }
+            
 
         }
 

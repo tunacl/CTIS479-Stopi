@@ -8,42 +8,13 @@
 
 <h1>@ViewData["Title"]</h1>
 
+@if (TempData["Message"] is not null)
+{
+    <p class="bg-info text-black">@TempData["Message"]</p>
+}
+
 <div>
-    <h4>User</h4>
-    <hr />
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.UserName)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.UserName)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.Password)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.Password)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-                @Html.DisplayNameFor(model => model.IsActive)
-            </dt>
-            <dd class="col-10">
-                @Html.DisplayFor(model => model.IsActive)
-            </dd>
-        </dl>
-        <dl class="row">
-            <dt class="col-2">
-            @Html.DisplayNameFor(model => model.RoleOutput.Name)
-            </dt>
-            <dd class="col-10">
-            @Html.DisplayFor(model => model.RoleOutput.Name)
-            </dd>
-        </dl>
-      
+    <partial name="_Details" model="Model" />
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>&nbsp;|&nbsp;
